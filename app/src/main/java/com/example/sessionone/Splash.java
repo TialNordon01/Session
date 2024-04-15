@@ -25,7 +25,7 @@ public class Splash extends AppCompatActivity {
             return insets;
         });
 
-        // Запускаем таймер на 5 секунд
+        // Запускаем таймер на 3 секунд
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -34,6 +34,6 @@ public class Splash extends AppCompatActivity {
                 startActivity(intent);
                 finish(); // Завершаем текущую активность
             }
-        }, 5000); // 5000 миллисекунд = 5 секунд
+        }, 3000); // 3000 миллисекунд = 5 секунд
     }
 }
