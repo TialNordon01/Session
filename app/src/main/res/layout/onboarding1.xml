@@ -60,12 +60,16 @@
                     android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/button2"
+                        android:id="@+id/button"
                         android:layout_width="100dp"
-                        android:layout_height="70dp"
-                        android:backgroundTint="#0560F9"
-                        android:text="Next"
-                        app:cornerRadius="3dp" />
+                        android:layout_height="60dp"
+                        android:backgroundTint="#FEFAFD"
+                        android:text="Skip"
+                        android:textColor="#0560F9"
+                        app:cornerRadius="3dp"
+                        app:strokeColor="#0560F9"
+                        app:strokeWidth="1dp" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -75,15 +79,12 @@
                     android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/button"
+                        android:id="@+id/button2"
                         android:layout_width="100dp"
-                        android:layout_height="70dp"
-                        android:backgroundTint="#FEFAFD"
-                        android:text="Skip"
-                        android:textColor="#0560F9"
-                        app:cornerRadius="3dp"
-                        app:strokeColor="#0560F9"
-                        app:strokeWidth="1dp" />
+                        android:layout_height="60dp"
+                        android:backgroundTint="#0560F9"
+                        android:text="Next"
+                        app:cornerRadius="3dp" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
