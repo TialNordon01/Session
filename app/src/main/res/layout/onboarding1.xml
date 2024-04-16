@@ -40,6 +40,33 @@
             android:layout_marginTop="4dp"
             android:text="Enjoy quick pick-up and delivery to your destination"
             android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FEFAFD"
+                android:text="Skip"
+                android:textColor="#0560F9"
+                app:cornerRadius="3dp"
+                app:strokeColor="#0560F9"
+                app:strokeWidth="1dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#0560F9"
+                android:text="Next"
+                app:cornerRadius="3dp" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
