@@ -23,4 +23,9 @@ public class Onboarding3 extends AppCompatActivity {
             return insets;
         });
     }
+
+    public void SignUp(View view) {
+        Intent intent = new Intent(this, SignUp.class);
+        startActivity(intent);
+    }
 }

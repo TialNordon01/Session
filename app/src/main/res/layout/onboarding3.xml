@@ -59,6 +59,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="53dp"
                     android:backgroundTint="#0560F9"
+                    android:onClick="SignUp"
                     android:text="Sign Up"
                     app:cornerRadius="3dp" />
 
