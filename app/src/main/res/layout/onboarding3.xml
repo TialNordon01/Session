@@ -75,7 +75,8 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="Already have an account?" />
+                        android:text="Already have an account?"
+                        android:textColor="#737373" />
 
                     <Button
                         android:id="@+id/button3"
