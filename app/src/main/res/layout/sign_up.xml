@@ -206,6 +206,7 @@
                         android:layout_height="53dp"
                         android:layout_weight="1"
                         android:backgroundTint="#9A9A9A"
+                        android:onClick="Home"
                         android:text="Sign Up"
                         app:cornerRadius="3dp" />
 

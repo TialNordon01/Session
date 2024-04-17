@@ -138,7 +138,6 @@
                                     android:id="@+id/button3"
                                     android:layout_width="140dp"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"
                                     android:backgroundTint="#FEFAFD"
                                     android:paddingLeft="0dp"
                                     android:paddingTop="0dp"
@@ -166,7 +165,7 @@
                         android:layout_height="53dp"
                         android:layout_weight="1"
                         android:backgroundTint="#9A9A9A"
-                        android:onClick="SignUp"
+                        android:onClick="Home"
                         android:text="Log in"
                         app:cornerRadius="3dp" />
 
