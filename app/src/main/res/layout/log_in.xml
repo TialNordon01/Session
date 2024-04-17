@@ -139,6 +139,7 @@
                                     android:layout_width="140dp"
                                     android:layout_height="wrap_content"
                                     android:backgroundTint="#FEFAFD"
+                                    android:onClick="ForgotPassword"
                                     android:paddingLeft="0dp"
                                     android:paddingTop="0dp"
                                     android:paddingRight="0dp"
