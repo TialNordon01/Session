@@ -232,6 +232,7 @@
                         android:layout_height="30dp"
                         android:layout_weight="1"
                         android:backgroundTint="#FEFAFD"
+                        android:onClick="SignIn"
                         android:paddingLeft="0dp"
                         android:paddingTop="0dp"
                         android:paddingRight="0dp"

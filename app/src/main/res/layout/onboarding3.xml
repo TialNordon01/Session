@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="SignIn"
     tools:context=".Onboarding3">
 
     <LinearLayout
@@ -84,6 +85,7 @@
                         android:layout_height="30dp"
                         android:layout_weight="1"
                         android:backgroundTint="#FEFAFD"
+                        android:onClick="SignIn"
                         android:paddingLeft="0dp"
                         android:paddingTop="0dp"
                         android:paddingRight="0dp"

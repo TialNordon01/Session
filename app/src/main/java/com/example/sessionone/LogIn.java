@@ -1,6 +1,8 @@
 package com.example.sessionone;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,10 @@ public class LogIn extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    public void SignUp(View view) {
+        Intent intent = new Intent(this, SignUp.class);
+        startActivity(intent);
     }
 }

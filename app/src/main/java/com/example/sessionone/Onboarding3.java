@@ -28,4 +28,9 @@ public class Onboarding3 extends AppCompatActivity {
         Intent intent = new Intent(this, SignUp.class);
         startActivity(intent);
     }
+
+    public void SignIn(View view) {
+        Intent intent = new Intent(this, LogIn.class);
+        startActivity(intent);
+    }
 }
