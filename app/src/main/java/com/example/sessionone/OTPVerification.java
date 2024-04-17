@@ -90,7 +90,6 @@ public class OTPVerification extends AppCompatActivity implements TextWatcher {
                 editTexts.get(current).requestFocus(); // Переносим фокус на предыдущий EditText
             }
         }
-        System.out.println("KURVA");
     }
 
     @Override
