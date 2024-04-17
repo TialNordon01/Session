@@ -178,8 +178,8 @@
                         android:layout_height="53dp"
                         android:layout_weight="1"
                         android:backgroundTint="#9A9A9A"
-                        android:onClick="Home"
-                        android:text="Send OTP"
+                        android:onClick="SetNewPassword"
+                        android:text="Set New Password"
                         app:cornerRadius="3dp" />
 
                 </LinearLayout>

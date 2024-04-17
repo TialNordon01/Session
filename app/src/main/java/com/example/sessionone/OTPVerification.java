@@ -1,9 +1,11 @@
 package com.example.sessionone;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.InputFilter;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
@@ -99,5 +101,12 @@ public class OTPVerification extends AppCompatActivity implements TextWatcher {
 
     @Override
     public void onTextChanged(CharSequence s, int start, int before, int count) {}
+
+    public void SetNewPassword(View view) {
+        Intent intent = new Intent(this, NewPassword.class);
+        startActivity(intent);
+    }
+
+
 
 }
