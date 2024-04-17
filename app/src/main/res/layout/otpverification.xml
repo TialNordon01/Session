@@ -65,7 +65,9 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:ems="10"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:scaleX="0.7"
+                            android:scaleY="0.7" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -82,7 +84,9 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:ems="10"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:scaleX="0.7"
+                            android:scaleY="0.7" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -99,7 +103,9 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:ems="10"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:scaleX="0.7"
+                            android:scaleY="0.7" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -116,7 +122,9 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:ems="10"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:scaleX="0.7"
+                            android:scaleY="0.7" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -133,7 +141,9 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:ems="10"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:scaleX="0.7"
+                            android:scaleY="0.7" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -150,7 +160,9 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:ems="10"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:scaleX="0.7"
+                            android:scaleY="0.7" />
                     </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
 

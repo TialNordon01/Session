@@ -78,14 +78,25 @@ public class OTPVerification extends AppCompatActivity implements TextWatcher {
 
     @Override
     public void afterTextChanged(Editable s) {
-        current++;
-        if (current < editTexts.size()) {
-            editTexts.get(current).requestFocus();
+        if (s.length() != 0) { // Проверяем, заполнено ли поле
+            if (current < editTexts.size() - 1) {
+                current++;
+                editTexts.get(current).requestFocus();
+            }
         }
+        if (s.length() == 0) {
+            if (current > 0) { // Убедитесь, что текущий индекс больше 0, чтобы избежать выхода за пределы списка
+                current--; // Переходим к предыдущему индексу
+                editTexts.get(current).requestFocus(); // Переносим фокус на предыдущий EditText
+            }
+        }
+        System.out.println("KURVA");
     }
 
     @Override
-    public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+    public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+    }
 
     @Override
     public void onTextChanged(CharSequence s, int start, int before, int count) {}
