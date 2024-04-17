@@ -28,4 +28,9 @@ public class ForgotPassword extends AppCompatActivity {
         Intent intent = new Intent(this, LogIn.class);
         startActivity(intent);
     }
+
+    public void SendOTP(View view) {
+        Intent intent = new Intent(this, OTPVerification.class);
+        startActivity(intent);
+    }
 }
