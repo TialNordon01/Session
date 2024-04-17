@@ -202,11 +202,10 @@
 
                     <Button
                         android:id="@+id/button2"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="53dp"
                         android:layout_weight="1"
                         android:backgroundTint="#9A9A9A"
-                        android:onClick="SignUp"
                         android:text="Sign Up"
                         app:cornerRadius="3dp" />
 
