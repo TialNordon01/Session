@@ -1,8 +1,14 @@
 package com.example.sessionone;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextUtils;
+import android.text.TextWatcher;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,6 +28,35 @@ public class LogIn extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        EditText email = findViewById(R.id.email);
+        EditText password = findViewById(R.id.password2);
+        Button login = findViewById(R.id.login);
+
+        TextWatcher textWatcher = new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                // Проверяем, заполнены ли все поля
+                if (!TextUtils.isEmpty(email.getText()) &&
+                    !TextUtils.isEmpty(password.getText())) {
+                    // Если все поля заполнены, изменяем цвет кнопки
+                    login.setBackgroundColor(Color.BLUE);
+                } else {
+                    // Если хотя бы одно поле не заполнено, возвращаем цвет кнопки к исходному
+                    login.setBackgroundColor(Color.GRAY);
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {}
+        };
+
+        // Добавляем TextWatcher к каждому EditText
+        email.addTextChangedListener(textWatcher);
+        password.addTextChangedListener(textWatcher);
     }
 
     public void Home(View view) {

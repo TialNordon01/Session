@@ -78,7 +78,7 @@
                     android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/signup"
+                        android:id="@+id/login"
                         android:layout_width="100dp"
                         android:layout_height="60dp"
                         android:backgroundTint="#0560F9"

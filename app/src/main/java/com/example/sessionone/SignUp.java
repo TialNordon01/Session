@@ -9,7 +9,6 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
@@ -17,8 +16,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-
-import com.google.android.material.textfield.TextInputLayout;
 
 public class SignUp extends AppCompatActivity {
 
@@ -36,10 +33,10 @@ public class SignUp extends AppCompatActivity {
         EditText name = findViewById(R.id.name);
         EditText phone = findViewById(R.id.phone);
         EditText email = findViewById(R.id.email);
-        EditText password = findViewById(R.id.password);
+        EditText password = findViewById(R.id.password1);
         EditText confirm = findViewById(R.id.confirm);
         CheckBox checkbox = findViewById(R.id.checkbox);
-        Button signup = findViewById(R.id.signup);
+        Button signup = findViewById(R.id.login);
 
         TextWatcher textWatcher = new TextWatcher() {
             @Override

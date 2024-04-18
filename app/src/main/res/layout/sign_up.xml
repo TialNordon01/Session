@@ -147,7 +147,7 @@
                         app:hintTextColor="#001AFF">
 
                         <EditText
-                            android:id="@+id/password"
+                            android:id="@+id/password1"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"

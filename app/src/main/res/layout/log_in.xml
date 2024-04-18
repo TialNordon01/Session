@@ -66,6 +66,7 @@
                         app:hintTextColor="#001AFF">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/email"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:hint="***********@mail.com" />
@@ -92,7 +93,7 @@
                         app:hintTextColor="#001AFF">
 
                         <EditText
-                            android:id="@+id/confirm"
+                            android:id="@+id/password2"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:ems="10"
@@ -165,7 +166,7 @@
                     android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/signup"
+                        android:id="@+id/login"
                         android:layout_width="match_parent"
                         android:layout_height="53dp"
                         android:layout_weight="1"
