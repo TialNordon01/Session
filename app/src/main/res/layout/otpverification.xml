@@ -57,7 +57,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:textColorHint="#C3C3C3">
+                        android:textColorHint="#C3C3C3"
+                        app:boxStrokeColor="#001AFF">
 
                         <EditText
                             android:id="@+id/editTextNumber"
@@ -76,7 +77,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:textColorHint="#C3C3C3">
+                        android:textColorHint="#C3C3C3"
+                        app:boxStrokeColor="#001AFF">
 
                         <EditText
                             android:id="@+id/editTextNumber"
@@ -95,7 +97,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:textColorHint="#C3C3C3">
+                        android:textColorHint="#C3C3C3"
+                        app:boxStrokeColor="#001AFF">
 
                         <EditText
                             android:id="@+id/editTextNumber"
@@ -114,7 +117,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:textColorHint="#C3C3C3">
+                        android:textColorHint="#C3C3C3"
+                        app:boxStrokeColor="#001AFF">
 
                         <EditText
                             android:id="@+id/editTextNumber"
@@ -133,7 +137,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:textColorHint="#C3C3C3">
+                        android:textColorHint="#C3C3C3"
+                        app:boxStrokeColor="#001AFF">
 
                         <EditText
                             android:id="@+id/editTextNumber"
@@ -152,7 +157,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:textColorHint="#C3C3C3">
+                        android:textColorHint="#C3C3C3"
+                        app:boxStrokeColor="#001AFF">
 
                         <EditText
                             android:id="@+id/editTextNumber"
