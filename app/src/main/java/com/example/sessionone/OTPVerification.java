@@ -1,11 +1,14 @@
 package com.example.sessionone;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.InputFilter;
+import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
@@ -76,6 +79,33 @@ public class OTPVerification extends AppCompatActivity implements TextWatcher {
         for (EditText editTextT : editTexts) {
             editTextT.addTextChangedListener(this);
         }
+
+        Button setpassword = findViewById(R.id.setpassword);
+
+        TextWatcher textWatcher = new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                // Проверяем, заполнены ли все поля
+                if (!TextUtils.isEmpty(editText1.getText()) &&
+                        !TextUtils.isEmpty(editText2.getText()) &&
+                        !TextUtils.isEmpty(editText3.getText()) &&
+                        !TextUtils.isEmpty(editText4.getText()) &&
+                        !TextUtils.isEmpty(editText5.getText()) &&
+                        !TextUtils.isEmpty(editText6.getText())) {
+                    // Если все поля заполнены, изменяем цвет кнопки
+                    setpassword.setBackgroundColor(Color.BLUE);
+                } else {
+                    // Если хотя бы одно поле не заполнено, возвращаем цвет кнопки к исходному
+                    setpassword.setBackgroundColor(Color.GRAY);
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {}
+        };
     }
 
     @Override
@@ -95,9 +125,7 @@ public class OTPVerification extends AppCompatActivity implements TextWatcher {
     }
 
     @Override
-    public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-    }
+    public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
 
     @Override
     public void onTextChanged(CharSequence s, int start, int before, int count) {}
@@ -106,7 +134,5 @@ public class OTPVerification extends AppCompatActivity implements TextWatcher {
         Intent intent = new Intent(this, NewPassword.class);
         startActivity(intent);
     }
-
-
 
 }
