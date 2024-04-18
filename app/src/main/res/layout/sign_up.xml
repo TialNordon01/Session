@@ -61,9 +61,12 @@
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
-                        android:textColorHint="#C3C3C3">
+                        android:textColorHint="#C3C3C3"
+                        app:boxStrokeColor="#001AFF"
+                        app:hintTextColor="#001AFF">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/name"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:hint="Ivanov Ivan" />
@@ -85,9 +88,12 @@
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
-                        android:textColorHint="#C3C3C3">
+                        android:textColorHint="#C3C3C3"
+                        app:boxStrokeColor="#001AFF"
+                        app:hintTextColor="#001AFF">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/phone"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:hint="+7(999)999-99-99" />
@@ -109,9 +115,12 @@
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
-                        android:textColorHint="#C3C3C3">
+                        android:textColorHint="#C3C3C3"
+                        app:boxStrokeColor="#001AFF"
+                        app:hintTextColor="#001AFF">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/email"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:hint="***********@mail.com" />
@@ -133,12 +142,15 @@
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
-                        android:textColorHint="#C3C3C3">
+                        android:textColorHint="#C3C3C3"
+                        app:boxStrokeColor="#001AFF"
+                        app:hintTextColor="#001AFF">
 
                         <EditText
-                            android:id="@+id/editTextTextPassword"
+                            android:id="@+id/password"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:layout_weight="1"
                             android:ems="10"
                             android:hint="**********"
                             android:inputType="textPassword" />
@@ -161,10 +173,12 @@
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
-                        android:textColorHint="#C3C3C3">
+                        android:textColorHint="#C3C3C3"
+                        app:boxStrokeColor="#001AFF"
+                        app:hintTextColor="#001AFF">
 
                         <EditText
-                            android:id="@+id/editTextTextPassword"
+                            android:id="@+id/confirm"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -181,9 +195,11 @@
                     android:orientation="horizontal">
 
                     <CheckBox
-                        android:id="@+id/checkBox2"
+                        android:id="@+id/checkbox"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:textColor="#001AFF"
+                        app:useMaterialThemeColors="false" />
 
                     <TextView
                         android:id="@+id/textView8"
@@ -201,7 +217,7 @@
                     android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/button2"
+                        android:id="@+id/signup"
                         android:layout_width="0dp"
                         android:layout_height="53dp"
                         android:layout_weight="1"
