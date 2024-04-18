@@ -9,6 +9,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
@@ -54,16 +55,31 @@ public class SignUp extends AppCompatActivity {
                     !TextUtils.isEmpty(confirm.getText()) &&
                     checkbox.isChecked()) {
                     // Если все поля заполнены, изменяем цвет кнопки
-                    signup.setBackgroundColor(Color.BLUE); // Пример цвета
+                    signup.setBackgroundColor(Color.BLUE);
                 } else {
                     // Если хотя бы одно поле не заполнено, возвращаем цвет кнопки к исходному
-                    signup.setBackgroundColor(Color.GRAY); // Пример исходного цвета
+                    signup.setBackgroundColor(Color.GRAY);
                 }
             }
 
             @Override
             public void afterTextChanged(Editable s) {}
         };
+
+        checkbox.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (!TextUtils.isEmpty(name.getText()) &&
+                    !TextUtils.isEmpty(phone.getText()) &&
+                    !TextUtils.isEmpty(email.getText()) &&
+                    !TextUtils.isEmpty(password.getText()) &&
+                    !TextUtils.isEmpty(confirm.getText()) &&
+                    checkbox.isChecked()) {
+                // Если все поля заполнены, изменяем цвет кнопки
+                signup.setBackgroundColor(Color.BLUE);
+            } else {
+                // Если хотя бы одно поле не заполнено, возвращаем цвет кнопки к исходному
+                signup.setBackgroundColor(Color.GRAY);
+            }
+        });
 
         // Добавляем TextWatcher к каждому EditText
         name.addTextChangedListener(textWatcher);
