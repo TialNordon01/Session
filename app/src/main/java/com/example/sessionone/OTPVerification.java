@@ -81,6 +81,8 @@ public class OTPVerification extends AppCompatActivity implements TextWatcher {
 
         Button setpassword = findViewById(R.id.setpassword);
 
+        setpassword.setClickable(false);
+
         TextWatcher textWatcher = new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
@@ -96,9 +98,11 @@ public class OTPVerification extends AppCompatActivity implements TextWatcher {
                         !TextUtils.isEmpty(editText6.getText())) {
                     // Если все поля заполнены, изменяем цвет кнопки
                     setpassword.setBackgroundColor(Color.BLUE);
+                    setpassword.setClickable(true);
                 } else {
                     // Если хотя бы одно поле не заполнено, возвращаем цвет кнопки к исходному
                     setpassword.setBackgroundColor(Color.GRAY);
+                    setpassword.setClickable(false);
                 }
             }
 

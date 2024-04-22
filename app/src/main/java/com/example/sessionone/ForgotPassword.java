@@ -32,6 +32,8 @@ public class ForgotPassword extends AppCompatActivity {
         EditText email = findViewById(R.id.email);
         Button sendotp = findViewById(R.id.sendotp);
 
+        sendotp.setClickable(false);
+
         TextWatcher textWatcher = new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
@@ -42,9 +44,11 @@ public class ForgotPassword extends AppCompatActivity {
                 if (!TextUtils.isEmpty(email.getText())) {
                     // Если все поля заполнены, изменяем цвет кнопки
                     sendotp.setBackgroundColor(Color.BLUE);
+                    sendotp.setClickable(true);
                 } else {
                     // Если хотя бы одно поле не заполнено, возвращаем цвет кнопки к исходному
                     sendotp.setBackgroundColor(Color.GRAY);
+                    sendotp.setClickable(false);
                 }
             }
 

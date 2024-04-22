@@ -38,6 +38,8 @@ public class SignUp extends AppCompatActivity {
         CheckBox checkbox = findViewById(R.id.checkbox);
         Button signup = findViewById(R.id.signup);
 
+        signup.setClickable(false);
+
         TextWatcher textWatcher = new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
@@ -53,9 +55,11 @@ public class SignUp extends AppCompatActivity {
                     checkbox.isChecked()) {
                     // Если все поля заполнены, изменяем цвет кнопки
                     signup.setBackgroundColor(Color.BLUE);
+                    signup.setClickable(true);
                 } else {
                     // Если хотя бы одно поле не заполнено, возвращаем цвет кнопки к исходному
                     signup.setBackgroundColor(Color.GRAY);
+                    signup.setClickable(false);
                 }
             }
 
@@ -72,9 +76,11 @@ public class SignUp extends AppCompatActivity {
                     checkbox.isChecked()) {
                 // Если все поля заполнены, изменяем цвет кнопки
                 signup.setBackgroundColor(Color.BLUE);
+                signup.setClickable(true);
             } else {
                 // Если хотя бы одно поле не заполнено, возвращаем цвет кнопки к исходному
                 signup.setBackgroundColor(Color.GRAY);
+                signup.setClickable(false);
             }
         });
 

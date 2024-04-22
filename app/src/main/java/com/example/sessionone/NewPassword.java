@@ -33,6 +33,8 @@ public class NewPassword extends AppCompatActivity {
         EditText confirm = findViewById(R.id.confirm);
         Button login = findViewById(R.id.login);
 
+        login.setClickable(false);
+
         TextWatcher textWatcher = new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
@@ -44,9 +46,11 @@ public class NewPassword extends AppCompatActivity {
                     !TextUtils.isEmpty(confirm.getText())) {
                     // Если все поля заполнены, изменяем цвет кнопки
                     login.setBackgroundColor(Color.BLUE);
+                    login.setClickable(true);
                 } else {
                     // Если хотя бы одно поле не заполнено, возвращаем цвет кнопки к исходному
                     login.setBackgroundColor(Color.GRAY);
+                    login.setClickable(false);
                 }
             }
 
