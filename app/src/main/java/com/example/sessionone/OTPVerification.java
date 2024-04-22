@@ -42,7 +42,6 @@ public class OTPVerification extends AppCompatActivity implements TextWatcher {
         InputFilter[] filters = new InputFilter[1];
         filters[0] = new InputFilter.LengthFilter(maxLength);
 
-
         TextInputLayout textInputLayout1 = findViewById(R.id.num1);
         EditText editText1 = textInputLayout1.getEditText();
         editText1.setFilters(filters);

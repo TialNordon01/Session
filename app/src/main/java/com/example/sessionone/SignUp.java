@@ -36,7 +36,7 @@ public class SignUp extends AppCompatActivity {
         EditText password = findViewById(R.id.password1);
         EditText confirm = findViewById(R.id.confirm);
         CheckBox checkbox = findViewById(R.id.checkbox);
-        Button signup = findViewById(R.id.login);
+        Button signup = findViewById(R.id.signup);
 
         TextWatcher textWatcher = new TextWatcher() {
             @Override
