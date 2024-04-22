@@ -64,7 +64,7 @@ public class NewPassword extends AppCompatActivity {
     }
 
     public void LogIn(View view) {
-        Intent intent = new Intent(this, Navigation.class);
+        Intent intent = new Intent(this, HomeNavigation.class);
         startActivity(intent);
     }
 }
