@@ -106,6 +106,10 @@ public class OTPVerification extends AppCompatActivity implements TextWatcher {
             @Override
             public void afterTextChanged(Editable s) {}
         };
+
+        for (EditText editTextT : editTexts) {
+            editTextT.addTextChangedListener(textWatcher);
+        }
     }
 
     @Override
