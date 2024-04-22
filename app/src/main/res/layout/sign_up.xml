@@ -52,7 +52,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@+id/fullnametext"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Full name"
@@ -79,7 +79,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@+id/phonetext"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Phone Number"
@@ -106,7 +106,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@+id/emailtext"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Email Address"
@@ -133,7 +133,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@+id/passwordtext"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Password"
@@ -202,7 +202,7 @@
                         app:useMaterialThemeColors="false" />
 
                     <TextView
-                        android:id="@+id/textView8"
+                        android:id="@+id/terms"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="By ticking this box, you agree to our Terms and conditions and private policy"
@@ -235,7 +235,7 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/textView3"
+                        android:id="@+id/alreadyhave"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -244,7 +244,7 @@
                         android:textColor="#737373" />
 
                     <Button
-                        android:id="@+id/button3"
+                        android:id="@+id/signin"
                         android:layout_width="50dp"
                         android:layout_height="30dp"
                         android:layout_weight="1"
@@ -272,7 +272,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView3"
+                            android:id="@+id/orsignin"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
