@@ -5,12 +5,12 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home">
+    tools:context=".Profile">
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="100dp"
-        android:elevation="30dp"
+        android:elevation="3dp"
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -29,7 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/house_active" />
+                app:srcCompat="@drawable/house" />
 
             <TextView
                 android:id="@+id/hometext"
@@ -38,7 +38,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="Home"
-                android:textColor="#0560F8"
+                android:textColor="#737373"
                 android:textSize="20dp" />
         </LinearLayout>
 
@@ -105,7 +105,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/profile" />
+                app:srcCompat="@drawable/profile_active" />
 
             <TextView
                 android:id="@+id/profiletext"
@@ -114,10 +114,9 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="Profile"
-                android:textColor="#737373"
+                android:textColor="#0560F8"
                 android:textSize="20dp" />
         </LinearLayout>
 
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
