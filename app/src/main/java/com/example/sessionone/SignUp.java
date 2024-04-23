@@ -93,7 +93,7 @@ public class SignUp extends AppCompatActivity {
     }
 
     public void Home(View view) {
-        Intent intent = new Intent(this, HomeNavigation.class);
+        Intent intent = new Intent(this, Home.class);
         startActivity(intent);
     }
 
