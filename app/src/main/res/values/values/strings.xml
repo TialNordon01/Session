@@ -1,11 +1,5 @@
 <resources>
-    <string name="app_name">SessionOne</string>
-    <string name="title_activity_test">test</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
-    <string name="title_activity_home">Home</string>
-    <string name="title_activity_home_navigation">HomeNavigation</string>
+    <string name="app_name">exam</string>
     <string name="str1">Quick Delivery at Your Doorstep</string>
     <string name="str2">Enjoy quick pick-up and delivery to your destination</string>
     <string name="str3">Flexible Payment</string>
@@ -19,6 +13,9 @@
     <string name="str11">Enter the 6 digit numbers sent to your email</string>
     <string name="str12">Enter new password</string>
     <string name="title_activity_home_page">Home_page</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
